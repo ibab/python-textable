@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+\sisetup
+{
+        strict,
+        per-mode=symbol-or-fraction,
+        separate-uncertainty=true,
+        add-integer-zero=true,
+        add-decimal-zero=true,
+        round-integer-to-decimal=true,
+        table-align-exponent=true,
+        table-align-uncertainty=true,
+        table-unit-alignment=center,
+        math-ohm=\mathup{\Omega},
+        text-ohm=\ensuremath{\mathup{\Omega}}
+}
+
+\begin{document}
+
+\input{test.tex}
+
+\end{document}

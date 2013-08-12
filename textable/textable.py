@@ -1,4 +1,3 @@
-
 def numplaces(num, uncert=False):
     if uncert:
         l, r = '{}'.format(num).split('+/-')
@@ -25,8 +24,6 @@ def genspec(col):
     cmax = 0
     for v in col:
         if is_uncert(v):
-            v.nominal_value
-            v.std_dev
             a, b, c = numplaces(v, uncert=True)
             if a > amax:
                 amax = a
